@@ -12,14 +12,13 @@ import java.util.List;
 
 public class Faturamento {
     public static void main(String[] args) {
-        String path = "src/main/java/org/gfilipe/projects/desafio_3/faturamento_diario.json";
+        String path = "src/main/java/org/gfilipe/projects/desafio_3/dados.json";
         Charset encoding = StandardCharsets.UTF_8;
 
         try {
             String jsonContent = Files.readString(Path.of(path), encoding);
 
-            JSONObject jsonObject = new JSONObject(jsonContent);
-            JSONArray faturamentoDiario = jsonObject.getJSONArray("faturamento_diario");
+            JSONArray faturamentoDiario = new JSONArray(jsonContent);
 
             double faturamentoMinimo = Double.MAX_VALUE;
             double faturamentoMaximo = 0;
@@ -41,7 +40,7 @@ public class Faturamento {
             double faturamentoMedio = somaFaturamentosDiarios /valores.size();
 
             long diasFaturamentoAcimaMedia = valores.stream().filter(valor -> valor > faturamentoMedio).count();
-
+            System.out.println("Análise de Faturamento Diário");
             System.out.printf("Menor valor de faturamento: R$%.2f%n", faturamentoMinimo);
             System.out.printf("Maior valor de faturamento: R$%.2f%n", faturamentoMaximo);
             System.out.printf("Número de dias com faturamento acima da média: %d%n", diasFaturamentoAcimaMedia);
