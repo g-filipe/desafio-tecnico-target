@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        System.out.print("Insira um número: ");
         int numeroInformado = sc.nextInt();
         int numeroAtual = 1;
         int numeroAnterior = 0;
