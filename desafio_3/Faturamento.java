@@ -1,4 +1,4 @@
-package org.gfilipe.projects.desafio_3;
+package desafio_3;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

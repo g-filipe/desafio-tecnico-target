@@ -1,4 +1,4 @@
-package org.gfilipe.projects.desafio_4;
+package desafio_4;
 
 import java.util.HashMap;
 import java.util.Map;

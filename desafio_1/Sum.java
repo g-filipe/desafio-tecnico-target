@@ -1,4 +1,4 @@
-package org.gfilipe.projects.desafio_1;
+package desafio_1;
 
 public class Sum {
     public static void main(String[] args) {

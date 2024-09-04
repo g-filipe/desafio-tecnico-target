@@ -1,4 +1,4 @@
-package org.gfilipe.projects.desafio_2;
+package desafio_2;
 
 import java.util.Scanner;
 
